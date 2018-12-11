@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.CountryDetailsActivity">
+
+    <RelativeLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_margin="10dp"
+            android:id="@+id/country_image"
+            android:layout_width="fill_parent"
+            android:scaleType="centerCrop"
+            android:layout_height="180dp" />
+
+        <RelativeLayout
+            android:id="@+id/country_details"
+            android:layout_below="@id/country_image"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/labels"
+            android:layout_marginLeft="10dp"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/nameLabel"
+                android:text="Name"
+                android:textStyle="bold"
+                android:layout_margin="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/capitalLabel"
+                android:text="Capital"
+                android:textStyle="bold"
+                android:layout_margin="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/currencyLabel"
+                android:text="Currency"
+                android:textStyle="bold"
+                android:layout_margin="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/timezoneLabel"
+                android:text="TimeZone"
+                android:textStyle="bold"
+                android:layout_margin="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/callingcodeLabel"
+                android:text="Calling codes"
+                android:textStyle="bold"
+                android:layout_margin="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/regionLabel"
+                android:text="Region"
+                android:textStyle="bold"
+                android:layout_margin="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/subregionLabel"
+                android:text="Sub Region"
+                android:textStyle="bold"
+                android:layout_margin="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/languageLabel"
+                android:text="Languages"
+                android:textStyle="bold"
+                android:layout_margin="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+
+
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_toRightOf="@id/labels"
+            android:id="@+id/values"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_marginLeft="20dp"
+                android:text="India"
+                android:layout_margin="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+
+
+            <TextView
+                android:id="@+id/capital"
+                android:layout_marginLeft="20dp"
+                android:text="New Delhi"
+                android:layout_margin="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/currency"
+                android:layout_marginLeft="20dp"
+                android:text="Indian Rupee"
+                android:layout_margin="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/timezone"
+                android:layout_marginLeft="20dp"
+                android:text="UTC+05:30"
+                android:layout_margin="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/callingcode"
+                android:text="callingcode"
+                android:layout_margin="5dp"
+                android:layout_marginLeft="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/region"
+                android:text="region"
+                android:layout_margin="5dp"
+                android:layout_marginLeft="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/subregion"
+                android:text="subregion"
+                android:layout_margin="5dp"
+                android:layout_marginLeft="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/language"
+                android:text="language"
+                android:layout_margin="5dp"
+                android:layout_marginLeft="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/save"
+            android:text="Save"
+            android:textStyle="bold"
+            android:layout_margin="20dp"
+            android:layout_below="@id/country_details"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>
